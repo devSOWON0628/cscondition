@@ -35,6 +35,7 @@ namespace cscondition
             Console.WriteLine(input>0?"자연수 입니다":"자연수가 아닙니다");
             Console.WriteLine(input%2==0 ? "짝수 입니다" : "홀수입니다");
 
+            Console.Write("월 입력 : ");
             int input2 = int.Parse(Console.ReadLine());
             switch (input2)
             {
@@ -92,6 +93,17 @@ namespace cscondition
             }
 
 
+
+            Console.Write("입력 : ");
+            String line = Console.ReadLine();
+            if (line.Contains("안녕"))
+            {
+                Console.WriteLine("안녕하세요!");
+            }
+            else
+            {
+                Console.WriteLine("인사해주세요!");
+            }
         }
     }
 }
