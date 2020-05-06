@@ -11,7 +11,7 @@ namespace cscondition
         static void Main(string[] args)
         {
             Console.Write("숫자 입력 : ");
-            int input2 = int.Parse(Console.ReadLine());
+           
             /*    if (input % 2 == 0)
                 {
                     Console.WriteLine("짝수입니다");
@@ -21,6 +21,21 @@ namespace cscondition
                     Console.WriteLine("홀수입니다");
                 }*/
 
+           
+            /*switch (input % 2)
+             {
+                 case 0:
+                     Console.WriteLine("짝수입니다");
+                     break;
+                 case 1:
+                     Console.WriteLine("홀수입니다");
+                     break;
+             }*/
+            int input = int.Parse(Console.ReadLine());
+            Console.WriteLine(input>0?"자연수 입니다":"자연수가 아닙니다");
+            Console.WriteLine(input%2==0 ? "짝수 입니다" : "홀수입니다");
+
+            int input2 = int.Parse(Console.ReadLine());
             switch (input2)
             {
                 case 12:
